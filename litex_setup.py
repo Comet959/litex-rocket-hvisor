@@ -169,7 +169,7 @@ def litex_setup_location_check():
     # Check if script is executed inside a cloned LiteX repository or alongside?
     if os.path.exists(".gitignore"):
         global current_path
-        current_path = os.path.join(current_path, "../")
+        current_path = os.path.join(current_path, "./")
 
 def litex_setup_auto_update():
     litex_setup_url = "https://raw.githubusercontent.com/Comet959/litex-rocket-hvisor/main/litex_setup.py"
