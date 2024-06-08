@@ -153,14 +153,15 @@ standard_repos.remove("pythondata-cpu-rocket")
 # Full: Migen + LiteX + Cores + Software + All CPUs.
 full_repos = list(git_repos.keys())
 
+hvisor_repos = ["migen", "litex"]
 
 # Installs:
 install_configs = {
     "minimal"  : minimal_repos,
     "standard" : standard_repos,
     "full"     : full_repos,
+    "hvisor"   : hvisor_repos,
 }
-
 
 # Script location / auto-update --------------------------------------------------------------------
 
@@ -171,7 +172,7 @@ def litex_setup_location_check():
         current_path = os.path.join(current_path, "../")
 
 def litex_setup_auto_update():
-    litex_setup_url = "https://raw.githubusercontent.com/enjoy-digital/litex/master/litex_setup.py"
+    litex_setup_url = "https://raw.githubusercontent.com/Comet959/litex-rocket-hvisor/main/litex_setup.py"
     current_sha1 = hashlib.sha1(open(os.path.realpath(__file__)).read().encode("utf-8")).hexdigest()
     print_status("LiteX Setup auto-update...")
     try:
@@ -484,4 +485,3 @@ def main():
 if __name__ == "__main__":
     main()
     
-

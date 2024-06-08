@@ -9,3 +9,12 @@ Intro
 ------
 
 This repo will contain all the other repos about how to build this repo includes firmware, gateware, software, etc.
+
+Steps
+------
+
+Follow the below steps to build your system.
+
+```shell
+
+```
