@@ -1,0 +1,6 @@
+litex-rocket-hvisor
+------------------
+
+This a repo for building rocket ip core on fpga for hvisor.
+
+> hvisor: https://github.com/syswonder/hvisor
